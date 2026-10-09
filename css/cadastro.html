@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cadastro de voluntários e doadores da ONG Vida Animal.">
+    <title>Cadastro – Vida Animal</title>
+    <link rel="icon" href="img/icon_pata.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/inicio.css">
+    <!-- <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cadastro.css"> -->
+</head>
+
+<body>
+    <a class="skip" href="#principal">Ir para o conteúdo</a>
+    <header class="topo">
+        <div class="wrap"><a class="logo" href="index.html"><span class="pata">🐾</span> Vida Animal<small>ONG de
+                    resgate</small></a>     
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </nav><a class="btn" href="projetos.html#doar">Doe agora</a>
+        </div>
+    </header>
+    <main id="principal">
+        <section class="wrap cad" aria-labelledby="t">
+            <div>
+                <h1 id="t">Crie sua conta</h1>
+                <p>Voluntários e doadores têm painel próprio.</p>
+                <figure class="img-vazia" data-nome="imagens/adocao.jpg"><img src="img/amor_animla.jpg"
+                        alt="Casa com coração e patinha" width="1200" height="900" loading="lazy"
+                        onerror="this.remove()"></figure>
+            </div>
+            <form id="form" action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label for="nome">Nome completo</label><input id="nome" name="nome" required minlength="5"
+                        autocomplete="name">
+                    <label for="email">E-mail</label><input type="email" id="email" name="email" required
+                        autocomplete="email">
+                    <label for="cpf">CPF</label><input id="cpf" name="cpf" required inputmode="numeric"
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" title="Formato 000.000.000-00">
+                    <label for="tel">Telefone</label><input type="tel" id="tel" name="tel" required
+                        pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(11) 99999-9999" title="Formato (11) 99999-9999">
+                    <label for="nasc">Data de nascimento</label><input type="date" id="nasc" name="nasc" required
+                        max="2008-12-31">
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="cep">CEP</label><input id="cep" name="cep" required inputmode="numeric"
+                        pattern="\d{5}-\d{3}" placeholder="00000-000" title="Formato 00000-000">
+                    <label for="end">Endereço</label><input id="end" name="end" required autocomplete="street-address">
+                    <label for="cidade">Cidade</label><input id="cidade" name="cidade" required>
+                    <label for="uf">Estado</label><select id="uf" name="uf" required>
+                        <option value="">Selecione</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>BA</option>
+                        <option>SC</option>
+                        <option>DF</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Acesso</legend>
+                    <label for="perfil">Quero ser</label><select id="perfil" name="perfil" required>
+                        <option value="">Selecione</option>
+                        <option value="voluntario">Voluntário</option>
+                        <option value="doador">Doador</option>
+                    </select>
+                    <label for="senha">Senha (mín. 6 caracteres)</label><input type="password" id="senha" name="senha"
+                        required minlength="6" autocomplete="new-password">
+                    <label class="chk"><input type="checkbox" name="news"> Quero receber boletim informativo</label>
+                </fieldset>
+                <button class="btn" type="submit">Criar conta</button>
+                <p id="msg" role="status"></p>
+            </form>
+        </section>
+    </main>
+        <footer class="rodape">
+        <div class="wrap">
+            <a href="index.html">
+                <img src="img/Logo_Vida_Animal_com_Pata_e_Coração-removebg-preview.png" alt="Logo da Vida Animal"
+                    class="logo-footer">
+            </a>
+            <address>
+                <h2>Contato</h2> av. paulista 1415 – São Paulo/SP<br><a
+                    href="mailto:contato@vidaanimal.org">contatoficticioleoyas@vidaanimal.org</a><br><a
+                    href="tel:+551140028922">(11)
+                    9999-9999</a>
+            </address>
+            <div>
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Área restrita</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Transparência</h2>
+                <p>CNPJ 00.000.000/0001-00<br>Relatórios anuais públicos.</p>
+            </div>
+        </div>
+        <p class="copy">© 2026 Vida Animal. projeto ficticio faculdade.</p>
+    </footer>
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

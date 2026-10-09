@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projetos sociais, voluntariado e doações da ONG Vida Animal.">
+    <title>Projetos – Vida Animal</title>
+    <link rel="icon" href="img/icon_pata.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+    <a class="skip" href="#principal">Ir para o conteúdo</a>
+    <header class="topo">
+        <div class="wrap"><a class="logo" href="index.html"><span class="pata">🐾</span> Vida Animal<small>ONG de
+                    resgate</small></a>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+            </nav><a class="btn" href="projetos.html#doar">Doe agora</a>
+        </div>
+    </header>
+    <main id="principal">
+        <section class="wrap" aria-labelledby="t">
+            <h1 id="t">Projetos sociais</h1>
+            <p>Escolha uma categoria:</p>
+            <div class="filtros" role="group" aria-label="Filtrar projetos"><button class="btn alt" type="button"
+                    data-f="todos">Todos</button><button class="btn alt" type="button"
+                    data-f="resgate">Resgate</button><button class="btn alt" type="button"
+                    data-f="adocao">Adoção</button><button class="btn alt" type="button"
+                    data-f="perdidos">Perdidos</button></div>
+            <div class="grade">
+                <article class="card" data-cat="resgate">
+                    <figure class="img-vazia" data-nome="img/resgate.jpg"><img src="img/capivara.jpg"
+                            alt="Ambulância de resgate animal" width="1200" height="900" loading="lazy"
+                            onerror="this.remove()"></figure>
+                    <div class="corpo">
+                        <h2>Resgate 24h</h2>
+                        <p>Equipe de plantão busca animais feridos e abandonados nas ruas.</p>
+                    </div>
+                </article>
+                <article class="card" data-cat="adocao">
+                    <figure class="img-vazia" data-nome="img/adocao.jpg"><img src="img/cachorrinho doacao.jpg"
+                            alt="Casa com coração e patinha" width="1200" height="900" loading="lazy"
+                            onerror="this.remove()"></figure>
+                    <div class="corpo">
+                        <h2>Adote um amigo</h2>
+                        <p>Feiras de adoção responsável com castração e vacinas em dia.</p>
+                    </div>
+                </article>
+                <article class="card" data-cat="perdidos">
+                    <figure class="img-vazia" data-nome="img/perdidos.jpg"><img src="img/macaquinhos.jpg"
+                            alt="Cartaz de animal perdido" width="1200" height="900" loading="lazy"
+                            onerror="this.remove()"></figure>
+                    <div class="corpo">
+                        <h2>Achados e Perdidos</h2>
+                        <p>Cadastro de animais domésticos e silvestres perdidos para reencontrar tutores.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="wrap" id="voluntariado" aria-labelledby="v">
+            <h2 id="v">Seja voluntário</h2>
+            <p>Precisamos de ajuda em resgates, passeios, transporte, eventos e redes sociais. <a
+                    href="cadastro.html">Faça seu cadastro</a> e candidate-se pelo painel do voluntário.</p>
+        </section>
+        <section class="wrap doar" id="doar" aria-labelledby="d">
+            <h2 id="d">Como doar</h2>
+            <p>Meta da campanha “Inverno Quentinho”: <strong>R$ 20.000</strong>. Arrecadado: <strong id="arrec">R$
+                    0</strong></p>
+            <div class="barra" role="progressbar" aria-label="Progresso da meta" aria-valuemin="0" aria-valuemax="100"
+                id="prog"><span></span></div>
+            <p>Doações via PIX: <strong>doe@vidaanimal.org</strong>. Para doar online e acompanhar o uso dos recursos,
+                <a href="login.html">entre como doador</a>.</p>
+        </section>
+    </main>
+        <footer class="rodape">
+        <div class="wrap">
+            <a href="index.html">
+                <img src="img/Logo_Vida_Animal_com_Pata_e_Coração-removebg-preview.png" alt="Logo da Vida Animal"
+                    class="logo-footer">
+            </a>
+            <address>
+                <h2>Contato</h2> av. paulista 1415 – São Paulo/SP<br><a
+                    href="mailto:contato@vidaanimal.org">contatoficticioleoyas@vidaanimal.org</a><br><a
+                    href="tel:+551140028922">(11)
+                    9999-9999</a>
+            </address>
+            <div>
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Área restrita</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Transparência</h2>
+                <p>CNPJ 00.000.000/0001-00<br>Relatórios anuais públicos.</p>
+            </div>
+        </div>
+        <p class="copy">© 2026 Vida Animal. projeto ficticio faculdade.</p>
+    </footer>
+    <script src="js/projetos.js"></script>
+</body>
+
+</html>

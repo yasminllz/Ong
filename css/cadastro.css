@@ -1,0 +1,70 @@
+.cad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    align-items: start
+}
+
+.cad img {
+    border-radius: 16px;
+    margin-top: 0x
+}
+
+form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    gap: 14px
+}
+
+fieldset {
+    border: 2px solid #d6e4da;
+    border-radius: 12px;
+    padding: 16px;
+    display: grid;
+    gap: 6px
+}
+
+legend {
+    font-weight: 700;
+    padding: 0 8px;
+    color: var(--verde)
+}
+
+label {
+    font-weight: 600;
+    margin-top: 6px
+}
+
+.chk {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+input:not([type=checkbox]),
+select {
+    padding: 10px;
+    border: 2px solid #b9cfc0;
+    border-radius: 8px;
+    font: inherit;
+    width: 100%
+}
+
+input:user-invalid,
+select:user-invalid {
+    border-color: var(--coral)
+}
+
+#msg {
+    font-weight: 700
+}
+
+.erro {
+    color: var(--coral)
+}
+
+.ok {
+    color: var(--verde2)
+}
