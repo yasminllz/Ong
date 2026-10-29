@@ -1,0 +1,58 @@
+.logbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    align-items: center
+}
+
+.logbox img {
+    border-radius: 20px
+}
+
+form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    display: grid;
+    gap: 10px
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #b9cfc0;
+    border-radius: 8px;
+    font: inherit
+}
+
+#msg {
+    color: var(--coral);
+    font-weight: 700
+}
+
+.demo {
+    background: var(--mint);
+    border-radius: 14px;
+    padding: 14px;
+    font-size: .95rem
+}
+
+.demo h2 {
+    font-size: 1.1rem;
+    margin-bottom: 6px
+}
+
+.demo ul {
+    list-style: none;
+    padding: 0
+}
+
+.demo li {
+    margin: 8px 0
+}
+@font-face {
+    font-family: 'matcha';
+    src: url(fontes/Matcha\ World.ttf);
+}
+#nome_login{
+    font-family: 'matcha', sans-serif;
+}

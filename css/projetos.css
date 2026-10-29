@@ -1,0 +1,34 @@
+.filtros {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 16px 0 24px
+}
+
+.filtros .btn[aria-pressed=true] {
+    background: var(--verde);
+    color: #fff
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6px
+}
+
+.doar {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px
+}
+
+.doar .barra {
+    margin: 12px 0
+}
+@font-face {
+    font-family: 'fonte_monimerserif';
+    src: url('fontes/MonimerSerif_PERSONAL_USE_ONLY.otf') format('truetype')
+}
+#projetos_h{
+    font-family: 'fonte_monimerserif', sans-serif;
+    font-size: 60px;
+}

@@ -1,0 +1,123 @@
+.card {
+    position: relative;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px #12333a24;
+}
+
+.projeto-card .badge {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 12px;
+}
+
+.badge,
+.tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 800;
+    background: #fff0df;
+    color: #884500;
+}
+
+.badge-verde {
+    background: #dff3f0;
+    color: #12685e;
+}
+
+.badge-azul {
+    background: #e5efff;
+    color: #244e91;
+}
+
+.tag {
+    margin: 0 0 12px;
+    background: var(--mint);
+    color: var(--verde);
+}
+
+.btn {
+    transition: filter .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--verde2);
+    outline-offset: 3px;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.btn:disabled,
+.btn[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+    filter: grayscale(.5);
+    transform: none;
+    box-shadow: none;
+}
+
+.toast {
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    bottom: 20px;
+    max-width: min(360px, calc(100vw - 40px));
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #fff;
+    background: #176b50;
+    box-shadow: 0 8px 24px #0002;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: .2s ease;
+}
+
+.toast-erro {
+    background: #a83232;
+}
+
+.toast-visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal {
+    width: min(480px, calc(100% - 32px));
+    border: 0;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 18px 60px #0004;
+}
+
+.modal::backdrop {
+    background: #102d2dcc;
+}
+
+.modal-conteudo {
+    padding: 32px;
+}
+
+.modal-fechar {
+    float: right;
+    border: 0;
+    background: var(--mint);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

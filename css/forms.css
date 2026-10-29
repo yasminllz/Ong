@@ -1,0 +1,44 @@
+form input,
+form select,
+form textarea {
+    max-width: 100%;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 0;
+    border-color: var(--verde2);
+    box-shadow: 0 0 0 3px #1f9d8f25;
+}
+
+form .campo-invalido {
+    border-color: #b83232 !important;
+    background-color: #fff8f8;
+    box-shadow: 0 0 0 2px #b8323220;
+}
+
+form .campo-valido {
+    border-color: #25845e !important;
+}
+
+.form-feedback:empty {
+    display: none;
+}
+
+.form-feedback {
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.form-feedback.ok {
+    color: #155b40;
+    background: #e2f6eb;
+}
+
+.form-feedback.erro {
+    color: #8c2424;
+    background: #fff0f0;
+}

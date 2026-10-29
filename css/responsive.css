@@ -1,0 +1,79 @@
+@media (max-width: 900px) {
+  .topo .wrap {
+    gap: 10px;
+  }
+
+  .topo nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .topo nav>ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .topo .wrap {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .topo nav {
+    order: 4;
+    width: 100%;
+  }
+
+  .topo nav>ul {
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 0;
+  }
+
+  .topo nav>ul.menu-aberto {
+    display: flex;
+  }
+
+  .topo nav li,
+  .topo nav a,
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    min-width: 0;
+    box-shadow: none;
+    margin: 4px 0 4px 12px;
+    background: #f5fbfa;
+  }
+
+  .topo>.wrap>.btn {
+    margin-left: 0;
+  }
+
+  .grade {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .projeto-card .corpo {
+    padding: 14px;
+  }
+
+  .modal-conteudo {
+    padding: 24px;
+  }
+
+  .filtros .btn {
+    padding: 10px 16px;
+  }
+}
